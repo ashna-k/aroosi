@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Ivory Edit | Accessories & Gifts</title>
+<meta name="description" content="Browse jewellery, accessories and gifts from The Ivory Edit. Enquire about your favourites on WhatsApp.">
+<link rel="stylesheet" href="style.css">
+<script src="shop.js" defer></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="#">The Ivory Edit<span>ACCESSORIES & GIFTS</span></a><nav aria-label="Main navigation"><a href="#collection">Collection</a><button data-enquiry>WhatsApp <span aria-hidden="true">◌</span></button></nav></header>
+<main>
+<section class="hero" aria-labelledby="title">
+<div class="hero-copy"><p class="eyebrow">THE BOUTIQUE COLLECTION</p><h1 id="title">The finishing<br><em>touch.</em></h1><p>Jewellery, accessories and thoughtful gifts for everyday dressing and special occasions.</p><a class="primary" href="#collection">Explore the collection</a></div>
+</section>
+<section class="collection" id="collection" aria-labelledby="collection-title">
+<div class="section-head"><p class="eyebrow">SHOP THE EDIT</p><h2 id="collection-title">The Collection</h2></div>
+<div class="filters" aria-label="Filter products"><button type="button" aria-pressed="true" data-category="All">All pieces</button><button type="button" aria-pressed="false" data-category="Jewellery">Jewellery</button><button type="button" aria-pressed="false" data-category="Accessories">Accessories</button><button type="button" aria-pressed="false" data-category="Gifts">Gifts</button></div>
+<p class="sr-only" id="results" role="status"></p><p id="catalogue-status" role="status"></p><div class="grid" id="products"></div>
+</section>
+</main>
+<footer><a class="brand" href="#">The Ivory Edit<span>ACCESSORIES & GIFTS</span></a><p>Ask us about availability, gifting or delivery.</p><button class="outline" data-enquiry>Chat on WhatsApp</button></footer>
+<dialog aria-labelledby="enquiry-title"><form method="dialog"><button class="close" aria-label="Close">×</button></form><p class="eyebrow">WHATSAPP ENQUIRY</p><h2 id="enquiry-title">Your enquiry</h2><p>The shop’s WhatsApp number is pending setup. Here’s a preview of the message customers will see.</p><textarea id="message" aria-label="Enquiry message" rows="4" readonly></textarea><form method="dialog"><button class="dark">Done</button></form></dialog>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shop Admin | The Ivory Edit</title>
+<link rel="stylesheet" href="/style.css">
+<script src="/admin.js" defer></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="/">The Ivory Edit<span>SHOP ADMIN</span></a><nav aria-label="Main navigation"><a href="/">Storefront</a><button id="logout" hidden>Sign out</button></nav></header>
+<main class="admin">
+<h1>Shop Admin</h1>
+<p id="notice" role="status">Checking sign-in…</p>
+<form id="login" hidden>
+<label for="password">Admin password</label>
+<input id="password" name="password" type="password" autocomplete="current-password" required>
+<button class="dark">Sign in</button>
+</form>
+<form id="product" hidden>
+<h2>Add a product</h2>
+<label for="name">Product name</label><input id="name" name="name" maxlength="100" required>
+<label for="category">Category</label>
+<select id="category" name="category" required><option value="">Select a category</option><option>Jewellery</option><option>Accessories</option><option>Gifts</option></select>
+<label for="price">Price (₹)</label><input id="price" name="price" type="number" min="0" max="9999999" step="1" required>
+<label for="image">Product photo</label><input id="image" name="image" type="file" accept="image/jpeg,image/png,image/webp" aria-describedby="image-help" required>
+<p class="help" id="image-help">JPEG, PNG or WebP up to 5 MB.</p>
+<button class="dark">Publish product</button>
+</form>
+</main>
+</body>
+</html>
